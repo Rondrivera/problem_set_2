@@ -7,11 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Shape.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        
+        Shape *Shape = [[Shape alloc]init];
+        
+        [Shape setHeightInMeters: 8.5];
+        [Shape setWidthInMeters: 6];
+        
+        float aos = [Shape areaOfShape];
+        NSLog(@"Shape has an area of %a", aos);
     }
     return 0;
 }

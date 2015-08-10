@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-
 @interface Shape : NSObject
+{
+float heightInMeters;
+float widthInMeters;
+}
+- (void) setHeightInMeters: (float)h;
+- (void) setWidthInMeters: (float)w;
 
+-(float) areaOfShape;
 @end

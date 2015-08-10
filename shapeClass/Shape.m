@@ -10,4 +10,18 @@
 
 @implementation Shape
 
+- (void) setHeightInMeters:(float)h;
+{
+    heightInMeters = h;
+}
+- (void) setWidthInMeters:(float)w;
+{
+    widthInMeters = w;
+}
+
+- (float) areaOfShape
+{
+    return
+    heightInMeters * widthInMeters;
+}
 @end
